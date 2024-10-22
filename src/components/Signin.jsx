@@ -34,7 +34,7 @@ const Signin = () => {
       <Toaster/>
       <div className="flex items-center h-full">
         <form
-          className="max-w-md mx-auto w-full m-8 bg-gray-50 p-8 rounded-lg"
+          className="lg:max-w-md mx-auto w-5/6 lg:w-full m-8 bg-gray-50 p-8 rounded-lg"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="text-2xl text-center">Signin</div>

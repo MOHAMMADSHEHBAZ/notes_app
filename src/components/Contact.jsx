@@ -30,7 +30,7 @@ const Contact = () => {
       <Toaster/>
       <div>
         <div className="flex items-center flex-col justify-center text-3xl p-10">
-          <div className=" mt-5 bg-gray-50 rounded-lg p-8 w-6/12">
+          <div className=" mt-5 bg-gray-50 rounded-lg p-8 lg:w-6/12 w-full">
           <h1 className="text-center mb-5">Contact Us</h1>
             <form className="mb-6" onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-6">
@@ -80,7 +80,7 @@ const Contact = () => {
                   className="block p-2.5 w-full text-sm text-gray-900 bg-white rounded border focus:outline-none border-gray-300 focus:ring-red-800 focus:border-red-800 "
                   placeholder="Your message..."
                   {
-                    ...register('message',{required:"Required"})
+                    ...register('message')
                   }
                 ></textarea>
               </div>

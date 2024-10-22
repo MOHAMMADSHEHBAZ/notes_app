@@ -39,7 +39,7 @@ const Getstated = () => {
     <>
       <div className="flex items-center h-full">
         <Toaster/>
-        <form className="max-w-md mx-auto w-full m-8 bg-gray-50 p-8 rounded-lg" onSubmit={handleSubmit(create)}>
+        <form className="lg:max-w-md mx-auto w-5/6 lg:w-full m-8 bg-gray-50 p-8 rounded-lg" onSubmit={handleSubmit(create)}>
           <div className="text-2xl text-center">Signup</div>
           <p className="text-center mt-4 mb-5 text-gray-500 text-sm">
             {" "}

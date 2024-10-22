@@ -15,6 +15,8 @@ import NotFound from './components/NotFound.jsx'
 import Admin from './components/Admin.jsx'
 import UploadNotes from './components/UploadNotes.jsx'
 import GetNotes from './components/GetNotes.jsx'
+import Allnotes from './components/Allnotes.jsx'
+import Post from './components/Post.jsx'
 
 const router = createBrowserRouter(
   [{
@@ -85,7 +87,20 @@ const router = createBrowserRouter(
          <GetNotes/>
         </AuthLayout>
         )
-      }
+      },
+      // {
+      //   path:'/Allnotes',
+      //   element:(
+      //   <AuthLayout authentication>
+      //     {" "}
+      //    <Allnotes/>
+      //   </AuthLayout>
+      //   )
+      // },
+      {
+        path: "/post/:fileId",
+        element: <Post/>
+      },
     ]
   }
   ]

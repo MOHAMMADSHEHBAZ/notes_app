@@ -14,7 +14,7 @@ export class NoteService {
         this.bucket = new Storage(this.client);
     }
 
-    async createNote({ title, content, userId, status, file }) {
+    async createNote({ name, file, description }) {
         try {
             const uploadedFile = await this.uploadFile(file);
             return await this.databases.createDocument(
@@ -22,12 +22,9 @@ export class NoteService {
                 conf.appWriteCollectionId,
                 ID.unique(), 
                 {
-                    title,
-                    content,
-                    userId,
-                    status, 
+                    name, 
+                    description,
                     fileId: uploadedFile.$id,
-                    downloadCount: 0 
                 }
             );
         } catch (error) {
@@ -87,16 +84,29 @@ export class NoteService {
         }
     }
 
-    async getAllNotes(queries = [Query.equal('status', 'active')]) {
+    async getAllNotes() {
         try {
             return await this.databases.listDocuments(
                 conf.appWriteDataBaseId,
-                conf.appWriteCollectionId,
-                queries
+                conf.appWriteCollectionId
             );
         } catch (error) {
             console.error("NoteService :: getAllNotes :: error", error);
             return false;
+        }
+    }
+
+    async getNotes(fileId){
+        try {
+            return await this.databases.getDocument(
+                conf.appWriteDataBaseId,
+                conf.appWriteCollectionId,
+                fileId
+            
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: getPost :: error", error);
+            return false
         }
     }
 
