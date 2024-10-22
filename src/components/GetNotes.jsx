@@ -5,7 +5,6 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { json } from "react-router-dom";
-import Allnotes from "./Allnotes";
 import Notes from "./Notes";
 import PostCard from "./Card";
 
