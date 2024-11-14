@@ -9,9 +9,10 @@ const Footer = () => {
             <img className="w-auto h-7" src={Logo} alt=""/>
         </a>
 
-        <p className="text-sm text-gray-600 ">© Copyright 2024. |
+        <p className="text-sm text-gray-600 ">
+            {/* © Copyright 2024. | */}
             <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank'>
-             @MohammadShehbaz
+             Developed By @MohammadShehbaz
             </a>
             </p>
 
