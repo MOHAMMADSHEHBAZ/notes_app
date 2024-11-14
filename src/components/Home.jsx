@@ -34,7 +34,7 @@ const Home = () => {
                 <span className="mx-3">Create</span>
               </div>
 
-              <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+              <div className="flex items-center text-gray-800 -px-3">
                 <svg
                   className="w-5 h-5 mx-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Home = () => {
                 <span className="mx-3">Organize</span>
               </div>
 
-              <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+              <div className="flex items-center text-gray-800 -px-3">
                 <svg
                   className="w-5 h-5 mx-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const Home = () => {
                 <span className="mx-3">Download</span>
               </div>
 
-              <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+              <div className="flex items-center text-gray-800 -px-3">
                 <svg
                   className="w-5 h-5 mx-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ const Home = () => {
                 <span className="mx-3">Secure</span>
               </div>
 
-              <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+              <div className="flex items-center text-gray-800 -px-3">
                 <svg
                   className="w-5 h-5 mx-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ const Home = () => {
                 <span className="mx-3">Access</span>
               </div>
 
-              <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+              <div className="flex items-center text-gray-800 -px-3">
                 <svg
                   className="w-5 h-5 mx-3"
                   xmlns="http://www.w3.org/2000/svg"

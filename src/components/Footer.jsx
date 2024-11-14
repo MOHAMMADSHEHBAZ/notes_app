@@ -3,20 +3,20 @@ import Logo from '../assets/logo.png'
 const Footer = () => {
   return (
 
-    <footer className="bg-white border bottom-0 dark:bg-gray-900">
+    <footer className="bg-white border bottom-0">
     <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
         <a href="#">
             <img className="w-auto h-7" src={Logo} alt=""/>
         </a>
 
-        <p className="text-sm text-gray-600 dark:text-gray-300">© Copyright 2024. |
+        <p className="text-sm text-gray-600 ">© Copyright 2024. |
             <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank'>
              @MohammadShehbaz
             </a>
             </p>
 
         <div className="flex -mx-2">
-            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-red-900 dark:hover:text-blue-400" aria-label="Reddit">
+            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300  hover:text-red-900" aria-label="Reddit">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -25,7 +25,7 @@ const Footer = () => {
                 </svg>
             </a>
 
-            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-red-900 dark:hover:text-blue-400" aria-label="Facebook">
+            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300  hover:text-red-900" aria-label="Facebook">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -34,7 +34,7 @@ const Footer = () => {
                 </svg>
             </a>
 
-            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-red-900 dark:hover:text-blue-400" aria-label="Github">
+            <a href="https://github.com/MOHAMMADSHEHBAZ" target='_blank' className="mx-2 text-gray-600 transition-colors duration-300  hover:text-red-900" aria-label="Github">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
